@@ -4,7 +4,7 @@ import org.example.utils.MyFileReader;
 
 public class Day1 implements ISolution{
     @Override
-    public int solution(){
+    public int solutionPart1(){
         var data = MyFileReader.ReadFromFile("_Resources/Day1.txt");
         var sum = 0;
         for (String line: data) {
@@ -13,6 +13,11 @@ public class Day1 implements ISolution{
         }
 
         return sum;
+    }
+
+    @Override
+    public int solutionPart2() {
+        return 0;
     }
 
     private int getFirstAndLast(String numbers) {
