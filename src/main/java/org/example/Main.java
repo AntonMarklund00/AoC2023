@@ -1,7 +1,6 @@
 package org.example;
 
-import org.example.solutions.Day1;
-import org.example.solutions.ISolution;
+import org.example.solutions.*;
 
 import java.util.Objects;
 
@@ -9,10 +8,10 @@ public class Main {
     public static void main(String[] args) throws IllegalArgumentException {
         runDay(args, Objects.requireNonNull(getDay(args)));
     }
-
     public static ISolution getDay(String[]args) throws IllegalArgumentException {
         return switch (args[0]) {
             case "1" -> new Day1();
+            case "3" -> new Day3();
             default -> throw new IllegalArgumentException("Illegal Argument");
         };
     }
