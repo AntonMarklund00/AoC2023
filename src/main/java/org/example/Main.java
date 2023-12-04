@@ -11,6 +11,7 @@ public class Main {
     public static ISolution getDay(String[]args) throws IllegalArgumentException {
         return switch (args[0]) {
             case "1" -> new Day1();
+            case "2" -> new Day2();
             case "3" -> new Day3();
             default -> throw new IllegalArgumentException("Illegal Argument");
         };
