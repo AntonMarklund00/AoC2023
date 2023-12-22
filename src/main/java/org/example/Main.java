@@ -1,8 +1,15 @@
 package org.example;
 
 import org.example.solutions.*;
+import org.example.utils.MyFileReader;
 
+import java.util.Arrays;
 import java.util.Objects;
+
+
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws IllegalArgumentException {
@@ -14,14 +21,12 @@ public class Main {
             case "2" -> new Day2();
             case "3" -> new Day3();
             case "4" -> new Day4();
+            case "6" -> new Day6();
             default -> throw new IllegalArgumentException("Illegal Argument");
         };
     }
     public static void runDay(String[] args, ISolution solution){
-        if(Objects.equals(args[1], "1")){
-            System.out.println(solution.solutionPart1());
-        }else if (Objects.equals(args[1], "2")){
-            System.out.println(solution.solutionPart2());
-        }
+        System.out.println("Part one: " + solution.solutionPart1());
+        System.out.println("Part two: " + solution.solutionPart2());
     }
 }
