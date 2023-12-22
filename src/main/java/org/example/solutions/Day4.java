@@ -5,11 +5,10 @@ import org.example.utils.MyFileReader;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.IntStream;
 
 public class Day4 implements ISolution{
     @Override
-    public int solutionPart1() {
+    public long solutionPart1() {
         var data = MyFileReader.ReadFromFile("_Resources/Day4.txt");
         var sum = 0;
 
@@ -26,7 +25,7 @@ public class Day4 implements ISolution{
     }
 
     @Override
-    public int solutionPart2() {
+    public long solutionPart2() {
         var data = MyFileReader.ReadFromFile("_Resources/Day4.txt");
         Map<Integer, Integer> cardAmounts = new HashMap<>();
 

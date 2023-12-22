@@ -18,7 +18,7 @@ public class Day1 implements ISolution{
         put("nine", "n9e");
     }};
     @Override
-    public int solutionPart1(){
+    public long solutionPart1(){
         var data = MyFileReader.ReadFromFile("_Resources/Day1.txt");
         var sum = 0;
         for (String line: data) {
@@ -30,7 +30,7 @@ public class Day1 implements ISolution{
     }
 
     @Override
-    public int solutionPart2() {
+    public long solutionPart2() {
         var data = MyFileReader.ReadFromFile("_Resources/Day1.txt");
         var sum = 0;
         for (String line: data) {

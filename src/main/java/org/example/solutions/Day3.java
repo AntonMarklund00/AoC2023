@@ -9,7 +9,7 @@ public class Day3 implements ISolution{
     private static final Pattern isSymbol = Pattern.compile("[@#$%^&*\\-=+/]");
 
     @Override
-    public int solutionPart1() {
+    public long solutionPart1() {
         var data = MyFileReader.ReadFromFile("_Resources/Day3.txt");
         var matrix = getMatrix(data);
         ArrayList<Symbol> symbols = getSymbols(matrix);
@@ -18,7 +18,7 @@ public class Day3 implements ISolution{
     }
 
     @Override
-    public int solutionPart2() {
+    public long solutionPart2() {
         var data = MyFileReader.ReadFromFile("_Resources/Day3.txt");
         var matrix = getMatrix(data);
         ArrayList<Symbol> symbols = getSymbols(matrix);

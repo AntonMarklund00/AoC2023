@@ -1,6 +1,6 @@
 package org.example.solutions;
 
 public interface ISolution {
-    public int solutionPart1();
-    public int solutionPart2();
+    public long solutionPart1();
+    public long solutionPart2();
 }

@@ -4,14 +4,13 @@ import org.example.utils.MyFileReader;
 import org.example.utils.NumberUtil;
 import org.example.utils.Tuple;
 
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Day6 implements ISolution {
 
     @Override
-    public int solutionPart1() {
+    public long solutionPart1() {
         List<String> data = MyFileReader.ReadFromFile("_Resources/Day6.txt");
 
         List<String> times = NumberUtil.GetNumbers(data.get(0));
@@ -31,7 +30,7 @@ public class Day6 implements ISolution {
     }
 
     @Override
-    public int solutionPart2() {
+    public long solutionPart2() {
         List<String> data = MyFileReader.ReadFromFile("_Resources/Day6.txt");
         int times = Integer.parseInt(NumberUtil.getAllNumbersInLineCombined(data.get(0)));
         long distances = Long.parseLong(NumberUtil.getAllNumbersInLineCombined(data.get(1)));

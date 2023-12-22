@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class Day2 implements ISolution{
     @Override
-    public int solutionPart1() {
+    public long solutionPart1() {
         var data = MyFileReader.ReadFromFile("_Resources/Day2.txt");
         var sum = 0;
         for (String line : data){
@@ -21,7 +21,7 @@ public class Day2 implements ISolution{
 
 
     @Override
-    public int solutionPart2() {
+    public long solutionPart2() {
         var data = MyFileReader.ReadFromFile("_Resources/Day2.txt");
         var sum = 0;
         for (String line : data){
