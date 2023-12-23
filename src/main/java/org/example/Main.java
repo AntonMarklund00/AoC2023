@@ -1,15 +1,7 @@
 package org.example;
 
 import org.example.solutions.*;
-import org.example.utils.MyFileReader;
-
-import java.util.Arrays;
 import java.util.Objects;
-
-
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws IllegalArgumentException {
@@ -26,6 +18,7 @@ public class Main {
             case "9" -> new Day9();
             case "13" -> new Day13();
             case "15" -> new Day15();
+            case "18" -> new Day18();
             default -> throw new IllegalArgumentException("Illegal Argument");
         };
     }
