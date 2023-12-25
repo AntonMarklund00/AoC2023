@@ -19,6 +19,7 @@ public class Main {
             case "13" -> new Day13();
             case "15" -> new Day15();
             case "18" -> new Day18();
+            case "25" -> new Day25();
             default -> throw new IllegalArgumentException("Illegal Argument");
         };
     }
